@@ -2,11 +2,11 @@
 /**
  * Utility class for Traffic API connection
  *
- * @version 2.0.0
+ * @version 2.0.1
  */
 class TrafficAPI
 {
-	private static $Version = '2.0.0';
+	private static $Version = '2.0.1';
 	private static $UserAgent = 'SalesLV/Traffic-API';
 	private static $VerifySSL = false;
 
@@ -33,12 +33,10 @@ class TrafficAPI
 	const ERROR_INSUFFICIENT_PARAMETERS = 9;
 	// A forbidden operation was tried
 	const ERROR_FORBIDDEN = 10;
-	// Request did not contain expected mandatory parameters
-	const ERROR_REQUIRED_PARAMETERS_MISSING = 11;
 	// Invalid API version. Should not happen unless something's seriously wrong on Premium side, this code was altered, or the HTTP request was mangled.
-	const ERROR_INVALID_API_VERSION = 12;
+	const ERROR_INVALID_API_VERSION = 11;
 	// Invalid data format requested. Same as above.
-	const ERROR_INVALID_DATA_FORMAT = 13;
+	const ERROR_INVALID_DATA_FORMAT = 12;
 
 	/**
 	 * @var string API endpoint URL
